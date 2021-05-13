@@ -1,0 +1,131 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.playLists {
+  list-style: none;
+  height: 600px;
+  overflow-y: scroll;
+  width: min-content;
+  margin: 0px;
+  margin-left: 10px;
+  padding: 0px;
+}
+
+.playlistItem {
+  border: solid 1px;
+}
+.subList{
+  list-style: none;
+  max-height: 400px;
+  overflow-y: scroll;
+  padding: 0px;
+  margin: 15px;
+  padding-top: 8px;
+  border-top: solid 1px gray ;
+}
+.subList::-webkit-scrollbar {
+  display: none;
+}
+.subListItem{
+  border: solid 1px gray;
+  border-radius: 10px;
+}
+
+.dashboard {
+  /* display: flex;
+  float: right; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashboardHeader {
+  margin-bottom: 10px;
+  width: 100%;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+}
+.resultsDiv {
+  z-index: 1;
+  position: fixed;
+
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.resultsList {
+  list-style: none;
+  max-height: 300px;
+  overflow-y: scroll;
+  border: solid 1px #d6d6d6;
+  padding: 0px;
+  width: fit-content;
+  background-color: white;
+}
+.resultsList::-webkit-scrollbar {
+  display: none;
+}
+
+.resultItem {
+  border: solid 1px gray;
+  cursor: pointer;
+}
+.resultItem:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.resultItem:active {
+  transform: scale(0.99);
+}
+
+.dashboardBody {
+  display: flex;
+  float: right;
+  border: solid 1px;
+  padding: 10px;
+
+  border: solid 1px;
+  border-radius: 10px;
+  width: fit-content;
+  min-width: 800px;
+}
+
+.player{
+  align-self: center;
+}
